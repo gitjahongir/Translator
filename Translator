@@ -1,0 +1,10 @@
+from deep_translator import GoogleTranslator
+
+list1 = "а"
+
+text = input("Напишите текст на англ: ")
+if list1 in text:
+    print("Пишите на англ!")
+else:
+    translate = GoogleTranslator(source='en', target='ru').translate(text)
+    print(f'Перевод: {translate}')
